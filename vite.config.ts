@@ -30,12 +30,12 @@ export default defineConfig({
         'vue-router',
         '@vueuse/core',
       ],
-      dts: true,
+      dts: 'src/types/auto-imports.d.ts',
     }),
 
     // https://github.com/antfu/vite-plugin-components
     Components({
-      dts: true,
+      dts: 'src/types/components.d.ts',
     }),
 
     // https://github.com/antfu/unocss
